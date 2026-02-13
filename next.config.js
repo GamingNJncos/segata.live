@@ -3,10 +3,6 @@ const withBundleAnalyzer = require("@next/bundle-analyzer")({
 });
 /** @type {import('next').NextConfig} */
 module.exports = withBundleAnalyzer({
-  output: "export",
-  images: {
-    unoptimized: true,
-  },
   webpack(config, options) {
     config.module.rules.push({
       test: /\.(mp3)$/,
