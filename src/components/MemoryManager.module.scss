@@ -1,0 +1,105 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 10px 0;
+}
+
+.columns {
+  display: flex;
+  gap: 12px;
+  flex: 1;
+  min-height: 0;
+}
+
+.column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+}
+
+.columnHeader {
+  font-family: "Phoebe Condensed Bold", "Monaco", monospace;
+  font-size: calc(var(--scene-width, 100vw) / 30);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #c0c8d8;
+  text-align: center;
+  padding: 6px 0;
+  background: linear-gradient(
+    180deg,
+    rgba(80, 40, 100, 0.7) 0%,
+    rgba(60, 30, 80, 0.5) 100%
+  );
+  border: 1px solid rgba(140, 100, 180, 0.4);
+  border-bottom: none;
+  user-select: none;
+}
+
+.scrollBox {
+  flex: 1;
+  overflow-y: auto;
+  background: rgba(20, 30, 60, 0.8);
+  border: 1px solid rgba(80, 100, 160, 0.4);
+  padding: 4px 0;
+  min-height: 120px;
+  max-height: 250px;
+
+  // Saturn-style thin scrollbar
+  &::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: rgba(20, 20, 40, 0.5);
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: rgba(100, 120, 180, 0.5);
+  }
+}
+
+.entryDisabled {
+  font-family: "ChibiPhoebe", "Monaco", monospace;
+  font-size: calc(var(--scene-width, 100vw) / 36);
+  letter-spacing: 1px;
+  color: rgba(120, 130, 160, 0.5);
+  padding: 3px 10px;
+  user-select: none;
+  cursor: default;
+}
+
+.emptyText {
+  font-family: "ChibiPhoebe", "Monaco", monospace;
+  font-size: calc(var(--scene-width, 100vw) / 40);
+  color: rgba(100, 110, 140, 0.4);
+  padding: 10px;
+  text-align: center;
+  user-select: none;
+}
+
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0 0;
+  border-top: 1px solid rgba(100, 100, 160, 0.2);
+  margin-top: auto;
+}
+
+.navButton {
+  font-family: "Phoebe Condensed Bold", "Monaco", monospace;
+  font-size: calc(var(--scene-width, 100vw) / 30);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #ccc;
+  background: none;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  padding: 6px 16px;
+
+  &:hover {
+    color: white;
+  }
+}
