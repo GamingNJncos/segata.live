@@ -21,7 +21,7 @@ const BootAnimation = dynamic(
 );
 
 const BOOT_ANIMATION = {
-  src: "/animations/saturn-startup.gif",
+  src: "/segata.live/animations/saturn-startup.gif",
   duration: 5200,
 };
 

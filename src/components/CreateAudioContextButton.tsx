@@ -14,7 +14,7 @@ const initApp = () => {
   audioManagerSingleton.init();
 };
 
-export const CreateAudioContextButton = () => {
+export const CreateAudioContextButton = (): null => {
   const hasInit = React.useRef(false);
 
   React.useEffect(() => {
@@ -24,16 +24,5 @@ export const CreateAudioContextButton = () => {
     }
   }, []);
 
-  // Keep the UI structure — will be replaced with an intro animation
-  return (
-    <div className={styles.wrapper} style={{ display: "none" }}>
-      <div className={styles.warning}>
-        <h1>⚠️ WARNING: PHOTOSENSITIVITY ⚠️</h1>
-        <p>This app displays flashing colors and shapes</p>
-      </div>
-      <button type="button" onClick={initApp}>
-        Click to Start
-      </button>
-    </div>
-  );
+  return null;
 };
